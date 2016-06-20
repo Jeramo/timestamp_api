@@ -12,14 +12,15 @@ var session = require('express-session');
 
 var app = express();
 
-var port = process.env.PORT || 8080;
-
-app.use(express.static(path.resolve(__dirname, 'client')));
-
 app.route('/')
     .get(function(req, res) {
       res.sendFile(process.cwd() + '/public/index.html');
     });
+
+
+var port = process.env.PORT || 8080;
+
+app.use(express.static(path.resolve(__dirname, 'client')));
 
 app.get('/:timestamp', function(req,res){
 	
