@@ -5,7 +5,6 @@
 var express = require('express');
 var moment = require('moment');
 var path = require('path');
-var routes = require('./app/routes/index.js');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var session = require('express-session');
