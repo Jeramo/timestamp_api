@@ -8,5 +8,14 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.13.0",
+    "mongoose": "^4.5.1",
+    "passport": "^0.3.2",
+    "path": "^0.12.7",
+    "routes": "^2.1.0",
+    "session": "^0.1.0"
+  }
 }
