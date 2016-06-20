@@ -16,6 +16,11 @@ var port = process.env.PORT || 8080;
 
 app.use(express.static(path.resolve(__dirname, 'client')));
 
+app.route('/')
+    .get(function(req, res) {
+      res.sendFile(process.cwd() + '/public/index.html');
+    });
+
 app.get('/:timestamp', function(req,res){
 	
 	var time = moment(req.params.timestamp, "MMMM DD, YYYY", true);
